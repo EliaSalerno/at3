@@ -8,9 +8,9 @@ do
 		useradd -m "$ut@issgreppi.it"
 		echo -e "$ut@issgreppi.it:$ps" | chpasswd
 		a=$((a+1))
-		touch "/home/.confcl"
-		echo "  Classe: $j">>"/home/.confcl"
-		echo "  Utente: $ut">>"/home/.confcl"
+		touch "/home/$ut@issgreppi.it/.confcl"
+		echo "  Classe: $j">>"/home/$ut@issgreppi.it/.confcl"
+		echo "  Utente: $ut">>"/home/$ut@issgreppi.it/.confcl"
 		chmod 500 "/home/.confcl"
 	done
 done
