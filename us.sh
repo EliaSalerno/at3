@@ -1,5 +1,5 @@
 a=0
-for j in $(ls /utenza);
+for j in $(ls utenza/);
 do
 	for i in $(cat utenza/$j);
 	do
