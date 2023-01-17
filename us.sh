@@ -12,7 +12,7 @@ do
 		echo "  Classe: $j">>"/home/$ut@issgreppi.it/.confcl"
 		echo "  Utente: $ut">>"/home/$ut@issgreppi.it/.confcl"
 		chmod 500 "/home/$ut@issgreppi.it/.confcl"
-		if [ $j = "5ia" || $j = "5ib" ];then
+		if [ ${j%i*} = 5 ];then
 			mkdir "/home/$ut@issgreppi.it/progetto"
 		fi
 	done
