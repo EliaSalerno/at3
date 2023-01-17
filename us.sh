@@ -14,6 +14,7 @@ do
 		chmod 500 "/home/$ut@issgreppi.it/.confcl"
 		if [ $j = "5ia" || $j = "5ib" ];then
 			mkdir "/home/$ut@issgreppi.it/progetto"
+		fi
 	done
 done
 chmod 750 /home/*
