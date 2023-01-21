@@ -1,7 +1,7 @@
 ut=$1
 for i in $(ls utenza/);
 do
-	for j in $(utenza/$i);
+	for j in $(cat utenza/$i);
 	do
 		utente=${j%-*}
 		if [ $utente = $ut ];then
