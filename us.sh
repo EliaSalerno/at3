@@ -1,3 +1,4 @@
+#!/bin/bash
 a=0
 for j in $(ls utenza/);
 do
