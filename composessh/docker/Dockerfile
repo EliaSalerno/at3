@@ -8,10 +8,8 @@ RUN echo -e "$SSH_MASTER_USER:SSH_MASTER_PASS" | chpasswd
 COPY ssh_config /etc/ssh/ssh_config
 COPY sshd_config /etc/ssh/sshd_config
 
-EXPOSE 22
-
-#RUN chmod +x /app/*
-#RUN /app/us.sh
+RUN chmod +x /app/*
+RUN /app/us.sh
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh

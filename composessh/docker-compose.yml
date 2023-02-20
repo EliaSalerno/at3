@@ -11,4 +11,4 @@ services:
                 ports:
                     - "2222:22"
         volume:
-            - progetto:/app
+            - ../:/app
