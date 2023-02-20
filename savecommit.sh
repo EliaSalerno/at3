@@ -1,4 +1,3 @@
-#!/bin/bash
 for j in $(ls /utenza);
 do
 	if [ ${j%i*} = 5 ];then

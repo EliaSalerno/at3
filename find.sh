@@ -1,4 +1,3 @@
-#!/bin/bash
 ut=$1
 for i in $(ls utenza/);
 do
