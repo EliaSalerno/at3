@@ -1,4 +1,4 @@
-apt update -y
-apt upgrade -y
-apt autoremove -y
+apt-get update
+apt-get full-upgrade
+apt-get autoremove
 echo "Done!"
