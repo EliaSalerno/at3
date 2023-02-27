@@ -1,4 +1,3 @@
-#!/bin/bash
 for i in $(ls utenza/);
 do
 	touch /utenza/temp

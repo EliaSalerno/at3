@@ -1,4 +1,3 @@
-#!/bin/bash
 a=0
 for i in $(ls /home);
 do

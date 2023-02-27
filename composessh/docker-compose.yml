@@ -4,11 +4,11 @@ services:
     server:
         build:
             context: ./docker
-                args:
-                    SSH_MASTER_USER: ${SSH_MASTER_USER}
-                    SSH_MASTER_PASS: ${SSH_MASTER_PASS}
-                hostname: server
-                ports:
-                    - "2222:22"
-        volume:
-            - progetto:/app
+            args:
+              SSH_MASTER_USER: ${SSH_MASTER_USER}
+              SSH_MASTER_PASS: ${SSH_MASTER_PASS}
+        hostname: server
+        ports:
+            - "2222:22"
+        volumes:
+            - ../:/app
